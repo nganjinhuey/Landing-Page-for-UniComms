@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Kongsi - Medical Cost Sharing Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hide scrollbar for testimonials */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    #error-display {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fef2f2;
+      color: #991b1b;
+      padding: 1rem;
+      z-index: 9999;
+      display: none;
+      border-bottom: 1px solid #f87171;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    window.addEventListener('error', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Error: ' + event.message + ' at ' + event.filename + ':' + event.lineno;
+      }
+    });
+    window.addEventListener('unhandledrejection', function (event) {
+      const errorDisplay = document.getElementById('error-display');
+      if (errorDisplay) {
+        errorDisplay.style.display = 'block';
+        errorDisplay.innerText = 'Promise Rejection: ' + event.reason;
+      }
+    });
+  </script>
+  <script type="module" crossorigin src="/Landing-Page-for-UniComms/assets/index-p5-qtBkE.js"></script>
+  <link rel="stylesheet" crossorigin href="/Landing-Page-for-UniComms/assets/index-D2O6UwNw.css">
+</head>
+
+
+
+<body className="bg-white">
+  <div id="root"></div>
+</body>
+
+</html>
