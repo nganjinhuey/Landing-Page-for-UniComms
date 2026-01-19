@@ -12,71 +12,83 @@ const Footer: React.FC = () => {
         <footer className="bg-brand-navy text-slate-300">
 
             {/* Redesigned CTA Section */}
-            <div id="join-section" className="bg-brand-surface-navy py-20 px-4 md:px-8 relative overflow-hidden">
+            {/* Top Redesigned CTA Section - Dual Card Layout */}
+            <div id="join-section" className="bg-sky-50 py-16 px-4 md:px-8 relative overflow-hidden">
                 {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#16647d 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+                <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#94a3b8 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 bg-white rounded-[2rem] shadow-2xl overflow-hidden relative border border-slate-100">
-                    {/* Decorative Blobs */}
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-100/50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
 
-                    {/* Left: Text */}
-                    <div className="w-full lg:w-1/2 text-left space-y-8 pl-8 pr-8 py-12 lg:pl-16 relative z-10">
-                        <div>
-                            <div className="inline-block bg-brand-navy text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Join The Community</div>
-                            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy leading-tight">
-                                What Are You <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-teal">Waiting For?</span>
-                            </h2>
-                        </div>
+                        {/* LEFT CARD — DIRECT REGISTRATION (Primary - Dark Theme) */}
+                        <div className="bg-gradient-to-br from-brand-navy via-brand-navy to-teal-900 rounded-3xl p-8 lg:p-10 shadow-2xl border border-brand-teal/20 flex flex-col items-start relative overflow-hidden group">
+                            {/* Subtle Glow Accent */}
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-teal/20 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none mix-blend-screen"></div>
+                            <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/20 rounded-full blur-3xl -ml-10 -mb-10 pointer-events-none mix-blend-screen"></div>
 
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
-                            Join <strong>We Kongsi</strong> today. Secure your peace of mind with <span className="text-brand-navy font-bold decoration-brand-teal underline decoration-4 underline-offset-4">RM1,000,000</span> medical protection.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-col gap-5">
-                            <Button
-                                size="lg"
-                                className="shadow-xl shadow-brand-teal/30 bg-gradient-to-r from-brand-navy to-brand-blue hover:to-brand-navy text-white px-10 py-5 text-xl w-fit animate-[bounce_2s_infinite]"
-                                onClick={openWhatsApp}
-                            >
-                                Sign Up Now
-                            </Button>
-
-                            {/* Elaborated Counter */}
-                            <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-200 max-w-md">
-                                <div className="bg-white p-3 rounded-full shadow-sm text-brand-teal">
-                                    <Users className="w-6 h-6" />
+                            <div className="relative z-10 w-full">
+                                <div className="inline-block bg-white/10 backdrop-blur-sm text-teal-300 text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-wider border border-white/10">
+                                    For Malaysians
                                 </div>
-                                <div className="flex-1">
-                                    <div className="flex items-center text-brand-navy font-bold text-xl leading-none">
-                                        <AnimatedCounter end={12543} />
-                                        <span className="ml-1">+</span>
-                                    </div>
-                                    <p className="text-xs text-slate-500 leading-tight mt-1">
-                                        Trusted Malaysians have already joined to protect themselves and their families.
+
+                                <h2 className="text-3xl font-extrabold text-white mb-4 leading-tight">
+                                    Ready to Get <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-300">Protected Today?</span>
+                                </h2>
+
+                                <p className="text-slate-300 text-lg mb-8 leading-relaxed border-l-2 border-brand-teal/50 pl-4">
+                                    Join the We Kongsi community and start your medical protection from just <span className="font-bold text-white">RM1 a day</span>.
+                                </p>
+
+                                <div className="w-full mt-auto">
+                                    <Button
+                                        size="lg"
+                                        className="w-full shadow-lg shadow-teal-500/30 bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-400 hover:to-teal-300 text-brand-navy h-14 text-lg font-bold rounded-xl justify-center border-none"
+                                        onClick={openWhatsApp}
+                                    >
+                                        Sign Up Now (Malaysians)
+                                    </Button>
+                                    <p className="text-center text-xs text-slate-400 mt-3 font-medium">
+                                        Join a community built on trust and shared responsibility.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Right: Image */}
-                    <div className="w-full lg:w-1/2 relative h-full min-h-[400px] lg:min-h-[500px]">
-                        <div className="absolute inset-0 bg-slate-200 flex items-center justify-center group overflow-hidden">
-                            <img
-                                src="image31.jpg"
-                                alt="Join We Kongsi Movement"
-                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            />
-                            <div className="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                        {/* RIGHT CARD — INTEREST / LEARN MORE (Secondary - Light Theme) */}
+                        <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-slate-200 flex flex-col items-start relative overflow-hidden group hover:border-teal-300 transition-colors duration-300">
+                            {/* Subtle Gradient Accent */}
+                            <div className="absolute top-[-10%] right-[-10%] w-56 h-56 bg-teal-50 rounded-full blur-3xl pointer-events-none"></div>
 
-                            {/* Interactive hover overlay */}
-                            <div className="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                                <span className="text-white font-bold text-2xl tracking-widest border-2 border-white px-6 py-2 backdrop-blur-sm">WE KONGSI</span>
+                            <div className="relative z-10 w-full">
+                                <div className="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                                    For Everyone
+                                </div>
+
+                                <h2 className="text-3xl font-bold text-slate-700 mb-4 leading-tight">
+                                    Not Ready to <br />
+                                    <span className="text-slate-900">Sign Up Yet?</span>
+                                </h2>
+
+                                <p className="text-slate-500 text-lg mb-8 leading-relaxed">
+                                    Leave your details and we’ll help you understand how it works and notify you when registration is available.
+                                </p>
+
+                                <div className="w-full mt-auto">
+                                    <Button
+                                        size="lg"
+                                        className="w-full !bg-teal-100 !text-[#01154f] hover:!bg-teal-200 hover:!text-[#01154f] h-14 text-lg font-extrabold rounded-xl justify-center border-none shadow-sm transition-colors"
+                                        onClick={() => window.open('https://brand.wekongsi.com/widget/form/JO8rQlGhvRv0DlGWf0TI', '_blank')}
+                                    >
+                                        Register Interest
+                                    </Button>
+                                    <p className="text-center text-xs text-slate-400 mt-3 font-medium">
+                                        Suitable for international students & anyone exploring options.
+                                    </p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
