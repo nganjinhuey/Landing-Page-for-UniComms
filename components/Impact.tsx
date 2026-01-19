@@ -26,7 +26,7 @@ const Impact: React.FC = () => {
       title="What Our Community Has Built Together"
       subtitle="See the real impact we make when we come together."
       id="impact"
-      className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50"
+      className="relative overflow-hidden bg-slate-50"
       dark={false}
     >
 

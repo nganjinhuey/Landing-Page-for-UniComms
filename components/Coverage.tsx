@@ -6,43 +6,61 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Rich Mid-Tone Blue Gradient */}
-            <Section
-                title="What's Included in Your Coverage"
-                subtitle="Comprehensive protection for peace of mind when you need it most."
-                className="bg-gradient-to-br from-blue-100 via-sky-200 to-blue-200"
-            >
-                <p className="text-center text-xs font-semibold text-slate-500 bg-white/50 inline-block px-3 py-1 rounded-full border border-blue-200/50 mb-8 mx-auto block w-fit">
-                    * Waiting Period Applies
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-                    {COVERAGE_ITEMS.map((item, idx) => {
-                        const Icon = item.icon;
-                        return (
-                            <div key={idx} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full justify-center border border-blue-200/60 group relative overflow-hidden cursor-pointer">
-                                {/* Vibrant Darker Shade Teal Gradient Hover Effect */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {/* Covered Items Grid - Soft Brand Wash */}
+            <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                                <div className="relative z-10">
-                                    <div className="mb-4 text-brand-blue group-hover:text-white transition-colors duration-300 flex justify-center">
-                                        <Icon size={36} strokeWidth={1.5} />
-                                    </div>
-                                    <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-white leading-tight transition-colors duration-300">
-                                        {item.name}
-                                    </span>
-                                </div>
+                    {/* Header with Doctor Image */}
+                    <div className="flex flex-col lg:flex-row items-center gap-10 mb-12">
+                        <div className="flex-1 text-center lg:text-left">
+                            <h2 className="text-3xl md:text-5xl font-bold text-brand-navy mb-4 leading-tight">
+                                What's Included in Your Coverage
+                            </h2>
+                            <p className="text-lg text-slate-600 mb-6 font-medium">
+                                Comprehensive protection for peace of mind when you need it most.
+                            </p>
+                            <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-sm font-bold tracking-wide">
+                                <Calendar className="w-4 h-4" />
+                                Waiting Period Applies*
+                            </p>
+                        </div>
+                        <div className="lg:w-1/3 relative hidden lg:block">
+                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                                <img
+                                    src="doctor_benefits.jpg"
+                                    alt="Doctor consulting with patient"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
-                        );
-                    })}
-                </div>
-            </Section>
+                            {/* Decorative Blob */}
+                            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-brand-teal/20 rounded-full blur-2xl"></div>
+                        </div>
+                    </div>
 
-            {/* RM10 Benefit Section - Fresh Mint/Teal Theme */}
-            <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden relative">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 relative z-10">
+                        {COVERAGE_ITEMS.map((item, idx) => {
+                            const Icon = item.icon;
+                            return (
+                                <div key={idx} className="bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full justify-center border border-slate-100 group relative overflow-hidden cursor-default">
+                                    <div className="relative z-10">
+                                        <div className="mb-4 text-slate-400 group-hover:text-brand-teal transition-colors duration-300 flex justify-center">
+                                            <Icon size={36} strokeWidth={1.5} />
+                                        </div>
+                                        <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-brand-blue leading-tight transition-colors duration-300">
+                                            {item.name}
+                                        </span>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
+
+            {/* RM10 Benefit Section - Fresh Brand Layout */}
+            <section className="py-20 bg-gradient-to-br from-teal-50/50 via-white to-blue-50/30 overflow-hidden relative">
                 {/* Background Patterns */}
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#0d9488 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-100 rounded-full blur-[100px] -translate-y-1/3 translate-x-1/3 opacity-80 mix-blend-multiply"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-100 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 opacity-80 mix-blend-multiply"></div>
+                <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#16647d 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -57,7 +75,7 @@ const Coverage: React.FC = () => {
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6 leading-tight flex flex-wrap items-baseline gap-3">
                                 <span>Malaysia's First</span>
-                                <span className="text-6xl md:text-7xl lg:text-8xl font-bold text-emerald-500 leading-none transform translate-y-1">RM10</span>
+                                <span className="text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-blue leading-none transform translate-y-1 drop-shadow-sm">RM10</span>
                                 <span className="w-full">Co-Payment Clinic Benefit</span>
                                 <span className="text-xl md:text-2xl text-slate-500 font-semibold block mt-1 tracking-tight w-full">(Conditional Outpatient Benefit, COB)</span>
                             </h2>
