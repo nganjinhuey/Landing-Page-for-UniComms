@@ -12,6 +12,7 @@ import HowItWorks from '../components/HowItWorks';
 import Partners from '../components/Partners';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 const Home: React.FC = () => {
     return (
@@ -31,6 +32,7 @@ const Home: React.FC = () => {
                 <Testimonials />
             </main>
             <Footer />
+            <FloatingWhatsApp />
         </div>
     );
 };
