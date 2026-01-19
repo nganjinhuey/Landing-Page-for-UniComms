@@ -1,16 +1,12 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import HomeBM from './pages/HomeBM';
-import HomeCN from './pages/HomeCN';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/bm" element={<HomeBM />} />
-        <Route path="/cn" element={<HomeCN />} />
       </Routes>
     </Router>
   );
