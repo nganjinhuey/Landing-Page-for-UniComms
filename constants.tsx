@@ -34,28 +34,28 @@ export const HERO_OBJECTIONS = [
 export const PAIN_POINTS = [
   {
     title: "Healthcare Is Getting More Expensive",
-    description: "Medical costs rise every year, often faster than income growth.",
+    description: "Medical inflation is rising every year, outpacing average income growth.",
     icon: TrendingUp,
     color: "text-red-500",
     bgColor: "bg-red-50"
   },
   {
     title: "Private Hospitals Are Too Expensive",
-    description: "Private care can be costly — but waiting too long often makes treatment even more expensive.",
+    description: "A simple procedure can cost thousands, draining your life savings instantly.",
     icon: DollarSign,
     color: "text-orange-500",
     bgColor: "bg-orange-50"
   },
   {
     title: "Government Hospitals are Overcrowded",
-    description: "Public healthcare plays an important role, but long wait times may delay timely care.",
+    description: "Long waiting times can worsen conditions that need immediate attention.",
     icon: Building2,
     color: "text-orange-500",
     bgColor: "bg-orange-50"
   },
   {
     title: "Many Children Have No Protection",
-    description: "Many families delay coverage for their children due to cost, leaving them vulnerable during emergencies.",
+    description: "Many families leave their kids unprotected due to high insurance premiums.",
     icon: Baby,
     color: "text-rose-500",
     bgColor: "bg-rose-50"
@@ -64,11 +64,11 @@ export const PAIN_POINTS = [
 
 export const FEATURES: FeatureItem[] = [
   { title: "Transparency You Can See", description: "Every sen shared is shown in your Monthly Sharing Report.", icon: FileSearch },
-  { title: "Affordable for Everyone", description: "Your monthly sharing is capped at RM50 — whether you’re a student, parent, or working adult.", icon: DollarSign },
+  { title: "Affordable for Everyone", description: "Your medical sharing is capped at RM50 a month.", icon: DollarSign },
   { title: "Pure Intention", description: "NO hidden charades or profit margins. Every sen supports real cases.", icon: Heart },
-  { title: "Fair for All Ages", description: "Everyone shares the same rate, regardless of age. No age-based price increases.", icon: Scale },
+  { title: "Fair for All Ages", description: "Everyone shares the same rate, regardless of age.", icon: Scale },
   { title: "Accountability You Can See", description: "Your sharing is used only for medical sharing. No investments or profit-taking.", icon: ShieldCheck },
-  { title: "Wide Access Nationwide", description: "Access to 250+ panel hospitals and 4000+ clinics. Suitable for individuals and families.", icon: MapPin },
+  { title: "Wide Access Nationwide", description: "Access to 250+ panel hospitals and 4000+ clinics.", icon: MapPin },
 ];
 
 export const COVERAGE_ITEMS = [

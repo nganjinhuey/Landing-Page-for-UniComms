@@ -10,9 +10,7 @@ const PainPoints: React.FC = () => {
   };
 
   return (
-    <Section className="bg-gradient-to-br from-sky-50 via-white to-indigo-50/40 relative overflow-hidden">
-      {/* Decorative Blob */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <Section className="bg-teal-50">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">What Most People Overlook About Medical Protection</h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -24,8 +22,8 @@ const PainPoints: React.FC = () => {
         {PAIN_POINTS.map((point, idx) => {
           const Icon = point.icon;
           return (
-            <div key={idx} className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-teal-200 hover:shadow-xl transition-all duration-300 group">
-              <div className={`w-14 h-14 bg-teal-50 rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300 ring-1 ring-teal-100`}>
+            <div key={idx} className="bg-white p-8 rounded-2xl border border-teal-100 hover:border-teal-300 hover:bg-teal-50/50 shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className={`w-14 h-14 bg-teal-100/50 rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300 ring-1 ring-teal-200`}>
                 <Icon className={`w-7 h-7 text-teal-600 group-hover:text-teal-700 transition-colors`} />
               </div>
               <h3 className="text-xl font-bold text-brand-navy mb-3 leading-tight">{point.title}</h3>

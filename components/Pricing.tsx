@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
             title="What Are You Paying For?"
             subtitle="Simple, affordable plans with no hidden fees."
             id="pricing"
-            className="bg-white"
+            className="bg-slate-100"
         >
 
             {/* 1. Membership Fee Section */}

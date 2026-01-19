@@ -89,7 +89,7 @@ const HowItWorks: React.FC = () => {
         <Section
             title="How Does Cost Sharing Work?"
             subtitle="Simple, Fair, and Transparent."
-            className="bg-gradient-to-br from-teal-50 via-white to-blue-50"
+            className="bg-gradient-to-br from-sky-100 via-cyan-50 to-teal-100"
             id="how-it-works"
         >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">

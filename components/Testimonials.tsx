@@ -120,10 +120,10 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-sky-100 relative overflow-hidden">
+    <section className="py-16 bg-blue-100 relative overflow-hidden">
       {/* Background - Soft Blue Theme with gradient blobs */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[100px] opacity-60 pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-100 rounded-full blur-[100px] opacity-60 pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-200 rounded-full blur-[100px] opacity-40 pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-200 rounded-full blur-[100px] opacity-40 pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">Stories of Trust & Relief</h2>
@@ -134,9 +134,9 @@ const Testimonials: React.FC = () => {
       {/* Carousel Container */}
       <div className="relative w-full">
 
-        {/* Gradient Fade Masks to focus attention on center - matched to bg-sky-100/mix */}
-        <div className="absolute top-0 left-0 w-8 md:w-32 h-full bg-gradient-to-r from-sky-100 to-transparent z-20 pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-8 md:w-32 h-full bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+        {/* Gradient Fade Masks to focus attention on center - matched to bg-blue-100 */}
+        <div className="absolute top-0 left-0 w-8 md:w-32 h-full bg-gradient-to-r from-blue-100 to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-8 md:w-32 h-full bg-gradient-to-l from-blue-100 to-transparent z-20 pointer-events-none"></div>
 
         {/* Scrolling Track */}
         <div

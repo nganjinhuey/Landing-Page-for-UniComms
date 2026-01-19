@@ -1,16 +1,16 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-
-import HomeV2 from './pages/HomeV2';
+import HomeBM from './pages/HomeBM';
+import HomeCN from './pages/HomeCN';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomeV2 />} />
-
-        <Route path="/v2" element={<HomeV2 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/bm" element={<HomeBM />} />
+        <Route path="/cn" element={<HomeCN />} />
       </Routes>
     </Router>
   );

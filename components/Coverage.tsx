@@ -6,31 +6,28 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Clean White to Soft Blue */}
+            {/* Covered Items Grid - Rich Mid-Tone Blue Gradient */}
             <Section
                 title="What's Included in Your Coverage"
                 subtitle="Comprehensive protection for peace of mind when you need it most."
-                className="bg-gradient-to-b from-cyan-50/40 to-blue-50/40"
+                className="bg-gradient-to-br from-blue-100 via-sky-200 to-blue-200"
             >
-                <div className="text-center mb-8">
-                </div>
-
-                <p className="text-center text-xs font-semibold text-slate-400 mb-8 mx-auto block w-fit">
+                <p className="text-center text-xs font-semibold text-slate-500 bg-white/50 inline-block px-3 py-1 rounded-full border border-blue-200/50 mb-8 mx-auto block w-fit">
                     * Waiting Period Applies
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                     {COVERAGE_ITEMS.map((item, idx) => {
                         const Icon = item.icon;
                         return (
-                            <div key={idx} className="bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full justify-center border border-slate-100 hover:border-teal-200 group relative overflow-hidden cursor-pointer">
-                                {/* Soft Teal Gradient Hover */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-sky-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div key={idx} className="bg-white/90 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center text-center shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full justify-center border border-blue-200/60 group relative overflow-hidden cursor-pointer">
+                                {/* Vibrant Darker Shade Teal Gradient Hover Effect */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                                 <div className="relative z-10">
-                                    <div className="mb-4 text-slate-400 group-hover:text-brand-teal transition-colors duration-300 flex justify-center">
+                                    <div className="mb-4 text-brand-blue group-hover:text-white transition-colors duration-300 flex justify-center">
                                         <Icon size={36} strokeWidth={1.5} />
                                     </div>
-                                    <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-brand-navy leading-tight transition-colors duration-300">
+                                    <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-white leading-tight transition-colors duration-300">
                                         {item.name}
                                     </span>
                                 </div>
@@ -40,10 +37,12 @@ const Coverage: React.FC = () => {
                 </div>
             </Section>
 
-            {/* RM10 Benefit Section - Clean Mint/Teal Theme */}
-            <section className="py-20 bg-gradient-to-br from-teal-50/30 to-white overflow-hidden relative border-t border-teal-50">
+            {/* RM10 Benefit Section - Fresh Mint/Teal Theme */}
+            <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden relative">
                 {/* Background Patterns */}
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#0d9488 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-100 rounded-full blur-[100px] -translate-y-1/3 translate-x-1/3 opacity-80 mix-blend-multiply"></div>
+                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-100 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 opacity-80 mix-blend-multiply"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -52,13 +51,13 @@ const Coverage: React.FC = () => {
 
                         {/* Left: Text Content & Bubbles */}
                         <div className="lg:w-7/12 text-left">
-                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold uppercase tracking-wider mb-6 shadow-sm border border-teal-200">
+                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-teal text-brand-navy text-xs font-bold uppercase tracking-wider mb-6 shadow-sm border-2 border-white">
                                 <ShieldCheck className="w-3 h-3 mr-1" /> Exclusive Perk
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6 leading-tight flex flex-wrap items-baseline gap-3">
                                 <span>Malaysia's First</span>
-                                <span className="text-6xl md:text-7xl lg:text-8xl font-bold text-teal-500 leading-none transform translate-y-1">RM10</span>
+                                <span className="text-6xl md:text-7xl lg:text-8xl font-bold text-emerald-500 leading-none transform translate-y-1">RM10</span>
                                 <span className="w-full">Co-Payment Clinic Benefit</span>
                                 <span className="text-xl md:text-2xl text-slate-500 font-semibold block mt-1 tracking-tight w-full">(Conditional Outpatient Benefit, COB)</span>
                             </h2>
@@ -69,8 +68,8 @@ const Coverage: React.FC = () => {
 
                             {/* Feature Bubbles - Clean Light Theme */}
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <div className="flex items-center bg-white rounded-2xl p-4 border border-teal-100 shadow-sm hover:shadow-md transition-all">
-                                    <div className="bg-teal-50 p-3 rounded-full mr-4 text-teal-600">
+                                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-teal-200/50 shadow-md hover:shadow-lg transition-all hover:bg-white">
+                                    <div className="bg-teal-100 p-3 rounded-full mr-4 text-teal-700">
                                         <Calendar className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -80,8 +79,8 @@ const Coverage: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="flex items-center bg-white rounded-2xl p-4 border border-teal-100 shadow-sm hover:shadow-md transition-all">
-                                    <div className="bg-teal-50 p-3 rounded-full mr-4 text-teal-600">
+                                <div className="flex items-center bg-white/80 backdrop-blur-sm rounded-2xl p-4 border border-teal-200/50 shadow-md hover:shadow-lg transition-all hover:bg-white">
+                                    <div className="bg-teal-100 p-3 rounded-full mr-4 text-teal-700">
                                         <Banknote className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -95,58 +94,58 @@ const Coverage: React.FC = () => {
 
                         {/* Right: Image - image3.jpg */}
                         <div className="lg:w-5/12 relative flex justify-center lg:justify-end">
-                            <div className="relative rounded-2xl overflow-hidden shadow-xl w-full max-w-lg aspect-[16/10] bg-teal-50 flex items-center justify-center group border-4 border-white">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-lg aspect-[16/10] bg-teal-50 flex items-center justify-center group">
                                 <img
                                     src="image3.jpg"
                                     alt="RM10 Clinic Benefit"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/20 via-transparent to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-teal-100/40 via-transparent to-transparent"></div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Bottom Row: 3 Cards Grid - Refined Colors */}
+                    {/* Bottom Row: 3 Cards Grid - Yellow, Green, Red */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                        {/* Card 1: Eligible Conditions (Soft Amber/Slate) */}
-                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-slate-200">
-                            <div className="p-5 bg-amber-50 border-b border-amber-100 flex items-center">
-                                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center mr-3 text-amber-600 font-bold">
+                        {/* Card 1: Eligible Conditions (Soft Yellow) */}
+                        <div className="bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-amber-100">
+                            <div className="p-5 bg-amber-100/50 border-b border-amber-200 flex items-center">
+                                <div className="w-8 h-8 rounded-full bg-amber-200 flex items-center justify-center mr-3 text-amber-700 font-bold">
                                     <Check className="w-5 h-5" />
                                 </div>
-                                <h3 className="font-bold text-amber-900/80 text-lg">Eligible Conditions</h3>
+                                <h3 className="font-bold text-amber-900 text-lg">Eligible Conditions</h3>
                             </div>
                             <div className="p-6 flex-1">
                                 <ul className="space-y-3">
                                     {CO_PAYMENT_CONDITIONS.map((item, i) => (
-                                        <li key={i} className="flex items-start text-slate-600 text-sm font-medium">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 mr-2.5 flex-shrink-0"></span>
+                                        <li key={i} className="flex items-start text-amber-900 text-sm font-medium">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-1.5 mr-2.5 flex-shrink-0"></span>
                                             {item}
                                         </li>
                                     ))}
                                 </ul>
-                                <div className="mt-6 pt-4 border-t border-slate-100">
-                                    <p className="text-sm text-slate-500 font-medium bg-slate-50 px-3 py-2 rounded-lg inline-block">
+                                <div className="mt-6 pt-4 border-t border-amber-200">
+                                    <p className="text-sm text-amber-800 font-bold bg-amber-200/50 px-3 py-2 rounded-lg inline-block">
                                         * Total 17 conditions eligible under COB.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Card 2: Covered Items (Soft Teal/Slate) */}
-                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-teal-100 relative z-10 ring-1 ring-teal-100">
-                            <div className="p-5 bg-teal-50 border-b border-teal-100 flex items-center">
-                                <div className="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center mr-3 text-teal-600 font-bold">
+                        {/* Card 2: Covered Items (Green) */}
+                        <div className="bg-emerald-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-emerald-100 relative z-10">
+                            <div className="p-5 bg-emerald-100/50 border-b border-emerald-200 flex items-center">
+                                <div className="w-8 h-8 rounded-full bg-emerald-200 flex items-center justify-center mr-3 text-emerald-700 font-bold">
                                     <ShieldCheck className="w-5 h-5" />
                                 </div>
-                                <h3 className="font-bold text-brand-navy text-lg">Covered Items</h3>
+                                <h3 className="font-bold text-emerald-900 text-lg">Covered Items</h3>
                             </div>
                             <div className="p-6 flex-1">
                                 <ul className="space-y-3">
                                     {CO_PAYMENT_COVERED.map((item, i) => (
-                                        <li key={i} className="flex items-start text-brand-navy text-sm font-medium">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-1.5 mr-2.5 flex-shrink-0"></span>
+                                        <li key={i} className="flex items-start text-emerald-900 text-sm font-medium">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 mr-2.5 flex-shrink-0"></span>
                                             <span className="leading-snug">{item}</span>
                                         </li>
                                     ))}
@@ -154,19 +153,19 @@ const Coverage: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Card 3: Non-Covered Items (Soft Red/Slate) */}
-                        <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-slate-200">
-                            <div className="p-5 bg-red-50 border-b border-red-100 flex items-center">
-                                <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-3 text-red-500 font-bold">
+                        {/* Card 3: Non-Covered Items (Red) */}
+                        <div className="bg-red-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col border border-red-100">
+                            <div className="p-5 bg-red-100/50 border-b border-red-200 flex items-center">
+                                <div className="w-8 h-8 rounded-full bg-red-200 flex items-center justify-center mr-3 text-red-600 font-bold">
                                     <X className="w-5 h-5" />
                                 </div>
-                                <h3 className="font-bold text-red-900/80 text-lg">Not Covered Items</h3>
+                                <h3 className="font-bold text-red-900 text-lg">Not Covered Items</h3>
                             </div>
                             <div className="p-6 flex-1">
                                 <ul className="space-y-3">
                                     {CO_PAYMENT_NOT_COVERED.map((item, i) => (
-                                        <li key={i} className="flex items-start text-slate-500 text-sm">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-red-300 mt-1.5 mr-2.5 flex-shrink-0"></span>
+                                        <li key={i} className="flex items-start text-red-800 text-sm">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 mr-2.5 flex-shrink-0"></span>
                                             {item}
                                         </li>
                                     ))}

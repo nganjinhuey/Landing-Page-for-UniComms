@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+import HeroV2 from '../components/HeroV2';
 import UnprotectedStats from '../components/UnprotectedStats';
 import PainPoints from '../components/PainPoints';
 import Features from '../components/Features';
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <div className="min-h-screen font-sans text-slate-900 bg-white">
             <Header />
             <main>
-                <Hero />
+                <HeroV2 />
                 <UnprotectedStats />
                 <PainPoints />
                 <Features />
