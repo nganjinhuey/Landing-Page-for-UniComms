@@ -109,6 +109,14 @@ const HeroV2: React.FC = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Right Content Area - Doctor & Patient Image */}
+                    <div className="w-full lg:w-2/5 flex justify-center lg:justify-end mt-8 lg:mt-0 relative z-20">
+                        <img
+                            src="doctor_patient.png"
+                            alt="Doctor consulting with patient"
+                            className="w-full max-w-md lg:max-w-full h-auto object-contain rounded-2xl shadow-2xl border border-white/20 transform hover:scale-[1.02] transition-transform duration-500"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
