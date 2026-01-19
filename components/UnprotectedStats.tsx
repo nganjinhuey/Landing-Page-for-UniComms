@@ -27,8 +27,8 @@ const UnprotectedStats: React.FC = () => {
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 group">
                             <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-transparent mix-blend-overlay z-10"></div>
                             <img
-                                src="doctor_consultation_v2.jpg"
-                                alt="Asian doctor consulting with young patient"
+                                src="doctor_insurance_explaining.jpg"
+                                alt="Doctor explaining medical coverage to patient"
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                         </div>
