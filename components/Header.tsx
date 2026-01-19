@@ -38,8 +38,8 @@ const Header: React.FC = () => {
 
 
 
-            {/* CTA Button - Links to WhatsApp */}
-            <Button size="sm" className="shadow-md" onClick={() => window.open('https://wa.me/60108768760', '_blank')}>
+            {/* CTA Button - Scrolls to Join Section */}
+            <Button size="sm" className="shadow-md" onClick={() => document.getElementById('join-section')?.scrollIntoView({ behavior: 'smooth' })}>
               Join Now
             </Button>
           </div>
