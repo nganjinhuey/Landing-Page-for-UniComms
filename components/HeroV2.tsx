@@ -60,7 +60,7 @@ const HeroV2: React.FC = () => {
 
                         {/* Headline - Deep Navy with Teal Emphasis */}
                         <h1 className="text-4xl lg:text-6xl font-extrabold text-brand-navy tracking-tight mb-4 leading-[1.15] drop-shadow-sm">
-                            Worried About Medical Bills as a <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-blue-400">Student</span> or <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-blue-400">Young Adult?</span>
+                            Worried About Medical Bills as a <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">Student</span> or <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">Young Adult?</span>
                         </h1>
 
                         {/* Rotating Objection - Muted Red */}
