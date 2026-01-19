@@ -3,7 +3,7 @@ import { Users, AlertCircle, HelpCircle, DollarSign, Search, ShieldAlert, Shield
 
 const UnprotectedStats: React.FC = () => {
     return (
-        <section className="py-24 bg-brand-surface-navy relative overflow-hidden">
+        <section className="py-24 bg-slate-50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Headline */}
