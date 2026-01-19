@@ -6,18 +6,33 @@ const UnprotectedStats: React.FC = () => {
         <section className="py-24 bg-slate-50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-                {/* Headline */}
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
-                        78% of Malaysians are <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
-                            UNPROTECTED
-                        </span>
-                    </h2>
+                {/* Headline & Visual Context Split */}
+                <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
+                    <div className="flex-1 text-center lg:text-left">
+                        <h2 className="text-4xl md:text-6xl font-extrabold text-brand-navy mb-6 tracking-tight">
+                            78% of Malaysians are <br className="hidden md:block" />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">
+                                UNPROTECTED
+                            </span>
+                        </h2>
 
-                    <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-red-50 border border-red-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
-                        <span className="text-red-600 font-bold text-xl tracking-tight">Are you one of them?</span>
-                        <span className="text-2xl animate-wave">✋</span>
+                        <div className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-red-50 border border-red-100 mb-8 shadow-sm hover:scale-105 transition-transform duration-300">
+                            <span className="text-red-600 font-bold text-xl tracking-tight">Are you one of them?</span>
+                            <span className="text-2xl animate-wave">✋</span>
+                        </div>
+                    </div>
+
+                    <div className="flex-1 relative">
+                        <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 group">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-transparent mix-blend-overlay z-10"></div>
+                            <img
+                                src="doctor_patient.png"
+                                alt="Doctor consulting with patient"
+                                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                            />
+                        </div>
+                        {/* Decorative background blob */}
+                        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-100/50 rounded-full blur-3xl opacity-60"></div>
                     </div>
                 </div>
 
