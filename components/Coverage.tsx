@@ -6,13 +6,9 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Fresh Medical Cleanliness */}
-            <section className="py-20 bg-gradient-to-br from-cyan-50/40 via-white to-blue-50/40 relative overflow-hidden">
-                {/* Soft Gradient Blobs for Depth */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-100/40 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 -z-10"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-50/40 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4 -z-10"></div>
-
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Covered Items Grid - Soft Brand Wash */}
+            <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     {/* Header with Doctor Image */}
                     <div className="flex flex-col lg:flex-row items-center gap-10 mb-12">
