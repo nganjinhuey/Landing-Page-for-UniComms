@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import HeroV2 from '../components/HeroV2';
-import TransitionImage from '../components/TransitionImage';
 import UnprotectedStats from '../components/UnprotectedStats';
 import PainPoints from '../components/PainPoints';
 import Features from '../components/Features';
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
             <Header />
             <main>
                 <HeroV2 />
-                <TransitionImage />
                 <UnprotectedStats />
                 <PainPoints />
                 <Features />
