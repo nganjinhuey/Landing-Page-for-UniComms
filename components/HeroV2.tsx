@@ -112,7 +112,7 @@ const HeroV2: React.FC = () => {
                 </div>
 
                 {/* Floating Stats Card - Positioned Bottom Left/Center, Reduced Prominence */}
-                <div className="absolute bottom-4 left-4 lg:bottom-10 lg:left-10 z-30 hidden sm:block">
+                <div className="absolute bottom-4 right-4 lg:bottom-10 lg:right-10 z-30 hidden sm:block">
                     <div className="bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.06)] border border-white/60 max-w-[220px] animate-fade-in-up">
                         <div className="flex flex-col items-start">
                             <div className="bg-teal-50 p-1.5 rounded-lg mb-2 text-primary border border-teal-100/50">
