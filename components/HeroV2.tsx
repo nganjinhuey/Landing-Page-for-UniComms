@@ -60,7 +60,7 @@ const HeroV2: React.FC = () => {
 
                         {/* Headline - Deep Navy with Teal Emphasis */}
                         <h1 className="text-4xl lg:text-6xl font-extrabold text-brand-navy tracking-tight mb-4 leading-[1.15] drop-shadow-sm">
-                            Worried About Medical Bills as a <span className="text-brand-teal">Student or Young Adult?</span>
+                            Worried About Medical Bills as a <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">Student</span> or <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">Young Adult?</span>
                         </h1>
 
                         {/* Rotating Objection - Muted Red */}
@@ -72,7 +72,7 @@ const HeroV2: React.FC = () => {
 
                         {/* Supporting Sentence - Dark Grey */}
                         <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl font-medium antialiased">
-                            Affordable medical protection of up to <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">RM1,000,000</span> through a transparent, community-based sharing program, designed to be simple, fair, and easy to understand for students, families, and working adults in Malaysia.
+                            Affordable medical protection of up to <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">RM1,000,000</span>, designed to be simple, fair, and easy to understand for students, families, and working adults in Malaysia.
                         </p>
 
                         {/* CTAs */}
