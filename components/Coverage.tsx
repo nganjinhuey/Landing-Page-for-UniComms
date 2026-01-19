@@ -6,50 +6,36 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Soft Brand Wash */}
-            <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+            {/* Covered Items Grid - Revert to Screenshot Style (Light Blue) */}
+            <section className="py-20 bg-blue-50 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    {/* Header with Doctor Image */}
-                    <div className="flex flex-col lg:flex-row items-center gap-10 mb-12">
-                        <div className="flex-1 text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl font-bold text-brand-navy mb-4 leading-tight">
-                                What's Included in Your Coverage
-                            </h2>
-                            <p className="text-lg text-slate-600 mb-6 font-medium">
-                                Comprehensive protection for peace of mind when you need it most.
-                            </p>
-                            <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-sm font-bold tracking-wide">
-                                <Calendar className="w-4 h-4" />
-                                Waiting Period Applies*
-                            </p>
-                        </div>
-                        <div className="lg:w-1/3 relative hidden lg:block">
-                            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-500">
-                                <img
-                                    src="doctor_benefits.jpg"
-                                    alt="Doctor consulting with patient"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            {/* Decorative Blob */}
-                            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-brand-teal/20 rounded-full blur-2xl"></div>
-                        </div>
+                    {/* Centered Header */}
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-brand-navy mb-6">
+                            What's Included in Your Coverage
+                        </h2>
+                        <p className="text-lg text-slate-600 mb-8">
+                            Comprehensive protection for peace of mind when you need it most.
+                        </p>
+                        <div className="w-24 h-1 bg-brand-navy mx-auto rounded-full mb-8"></div>
+
+                        <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-blue-100 text-brand-blue text-sm font-bold tracking-wide shadow-sm">
+                            * Waiting Period Applies
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 relative z-10">
                         {COVERAGE_ITEMS.map((item, idx) => {
                             const Icon = item.icon;
                             return (
-                                <div key={idx} className="bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full justify-center border border-slate-100 group relative overflow-hidden cursor-default">
-                                    <div className="relative z-10">
-                                        <div className="mb-4 text-slate-400 group-hover:text-brand-teal transition-colors duration-300 flex justify-center">
-                                            <Icon size={36} strokeWidth={1.5} />
-                                        </div>
-                                        <span className="text-sm md:text-base font-semibold text-brand-navy group-hover:text-brand-blue leading-tight transition-colors duration-300">
-                                            {item.name}
-                                        </span>
+                                <div key={idx} className="bg-white rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full justify-center border border-white hover:border-blue-100 group">
+                                    <div className="mb-4 text-brand-blue group-hover:scale-110 transition-transform duration-300">
+                                        <Icon size={40} strokeWidth={1.5} />
                                     </div>
+                                    <span className="text-sm md:text-base font-bold text-brand-navy leading-tight">
+                                        {item.name}
+                                    </span>
                                 </div>
                             );
                         })}

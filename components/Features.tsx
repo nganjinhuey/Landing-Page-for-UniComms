@@ -13,10 +13,11 @@ const Features: React.FC = () => {
         <div className="overflow-hidden bg-white">
 
             {/* Intro / Who We Are Section - Soft Brand Tint */}
-            <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-brand-surface-blue via-slate-50 to-blue-50/50 rounded-3xl my-8 mx-4 md:mx-auto relative overflow-hidden">
-                {/* Decorative background elements */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/60 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-cyan-200/40 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+            {/* Intro / Who We Are Section - Revert to Light Blue */}
+            <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-cyan-50 rounded-3xl my-8 mx-4 md:mx-auto relative overflow-hidden">
+                {/* Minimal Background */}
+                <div className="absolute top-0 right-0 w-96 h-96 bg-white/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
                 <div className="flex flex-col lg:flex-row items-center gap-16 relative z-10">
 
