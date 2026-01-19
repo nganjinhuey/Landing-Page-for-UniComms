@@ -72,7 +72,7 @@ const HeroV2: React.FC = () => {
 
                         {/* Supporting Sentence - Dark Grey */}
                         <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl font-medium antialiased">
-                            Affordable medical protection through a transparent, community-based sharing program — designed to be simple, fair, and easy to understand for students, families, and working adults in Malaysia.
+                            Affordable medical protection of up to <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-teal-400">RM1,000,000</span> through a transparent, community-based sharing program, designed to be simple, fair, and easy to understand for students, families, and working adults in Malaysia.
                         </p>
 
                         {/* CTAs */}
@@ -107,22 +107,6 @@ const HeroV2: React.FC = () => {
                                 <CheckCircle className="w-4 h-4 mr-2 text-teal-600" />
                                 <span>No long-term commitment. No hidden charges.</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Floating Stats Card - Positioned Bottom Left/Center, Reduced Prominence */}
-                <div className="absolute bottom-4 right-4 lg:bottom-10 lg:right-10 z-30 hidden sm:block">
-                    <div className="bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.06)] border border-white/60 max-w-[220px] animate-fade-in-up">
-                        <div className="flex flex-col items-start">
-                            <div className="bg-teal-50 p-1.5 rounded-lg mb-2 text-primary border border-teal-100/50">
-                                <ShieldCheck className="w-5 h-5" />
-                            </div>
-                            <p className="text-xl font-black text-brand-navy leading-none mb-1">
-                                RM1,000,000
-                            </p>
-                            <p className="text-sm font-bold text-slate-600 leading-tight mb-0.5">Medical Protection</p>
-                            <p className="text-[10px] font-medium text-slate-400 uppercase tracking-wide">From RM1/day</p>
                         </div>
                     </div>
                 </div>
