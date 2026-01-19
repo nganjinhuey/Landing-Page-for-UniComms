@@ -22,17 +22,18 @@ const UnprotectedStats: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="flex-1 relative">
+                    {/* Visual - Resized to be smaller */}
+                    <div className="lg:w-1/3 relative">
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 group">
                             <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-transparent mix-blend-overlay z-10"></div>
                             <img
-                                src="doctor_consultation_stock.jpg"
-                                alt="Doctor consulting with patient in a reassuring setting"
+                                src="doctor_consultation_v2.jpg"
+                                alt="Asian doctor consulting with young patient"
                                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                         </div>
-                        {/* Decorative background blob */}
-                        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-100/50 rounded-full blur-3xl opacity-60"></div>
+                        {/* Decorative background blob - resized */}
+                        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-blue-100/50 rounded-full blur-3xl opacity-60"></div>
                     </div>
                 </div>
 
