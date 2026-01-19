@@ -26,9 +26,11 @@ const Impact: React.FC = () => {
       title="What Our Community Has Built Together"
       subtitle="See the real impact we make when we come together."
       id="impact"
-      className="relative overflow-hidden bg-slate-50"
+      className="relative overflow-hidden bg-gradient-to-br from-indigo-50/30 via-white to-blue-50/30"
       dark={false}
     >
+      {/* Subtle Grid Pattern for Trust/Structure */}
+      <div className="absolute inset-0 opacity-[0.4]" style={{ backgroundImage: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
 
       {/* Soft Background Blobs for mixed cool tones */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -12,14 +12,19 @@ const PainPoints: React.FC = () => {
   return (
     <Section className="bg-slate-50 relative overflow-hidden">
       {/* Contextual Image Strip (Top) */}
-      <div className="absolute top-0 left-0 w-full h-64 z-0 opacity-10">
+      <div className="absolute top-0 left-0 w-full h-80 z-0 opacity-10">
         <img
           src="hospital_corridor.jpg"
           alt="Hospital corridor background"
-          className="w-full h-full object-cover grayscale"
+          className="w-full h-full object-cover grayscale mask-image-b-0"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-50"></div>
       </div>
+
+      {/* Subtle Mesh Gradient Overlay covering the whole section */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-teal-50/30 to-slate-100 z-0 pointer-events-none"></div>
+
+      {/* Texture: Dot Pattern */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#0f766e 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
       <div className="text-center mb-16 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 pt-10">What Most People Overlook About Medical Protection</h2>
