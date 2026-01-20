@@ -20,7 +20,7 @@ const UnprotectedStats: React.FC = () => {
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
                 <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 leading-tight">
                     <span className="text-white block mb-4 text-3xl md:text-5xl font-bold tracking-normal opacity-90">78% of Malaysians are</span>
-                    <span className="text-red-500 text-6xl md:text-8xl lg:text-9xl drop-shadow-2xl block mt-2">UNPROTECTED</span>
+                    <span className="text-red-500 text-5xl md:text-7xl lg:text-8xl drop-shadow-2xl block mt-2">UNPROTECTED</span>
                 </h2>
 
                 <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto font-medium tracking-wide">

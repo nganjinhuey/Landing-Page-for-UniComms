@@ -10,10 +10,22 @@ const PainPoints: React.FC = () => {
   };
 
   return (
-    <Section className="bg-white relative overflow-hidden">
-      <div className="text-center mb-10 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 pt-10">What Most People Overlook About Medical Protection</h2>
-        <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+    <Section className="bg-slate-50 relative overflow-hidden pt-24 pb-20">
+      {/* Top Visual Separator - Soft Gradient Fade */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-slate-50 pointer-events-none"></div>
+
+      <div className="text-center mb-16 relative z-10 px-4">
+        {/* Section Label */}
+        <div className="inline-block mb-6">
+          <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-slate-400 uppercase">
+            The Reality of Healthcare in Malaysia
+          </span>
+        </div>
+
+        <h2 className="text-3xl md:text-5xl font-bold text-brand-navy mb-6 leading-tight">
+          What Most People <span className="text-brand-blue">Overlook</span> About <br className="hidden md:block" /> Medical Protection
+        </h2>
+        <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
           The reality of healthcare in Malaysia is challenging. Are you prepared for the unexpected?
         </p>
       </div>
@@ -22,7 +34,7 @@ const PainPoints: React.FC = () => {
         {PAIN_POINTS.map((point, idx) => {
           const Icon = point.icon;
           return (
-            <div key={idx} className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-emerald-200 shadow-sm hover:shadow-lg transition-all duration-300 group">
+            <div key={idx} className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-brand-teal/50 shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
               <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-emerald-100 transition-colors duration-300">
                 <Icon className="w-8 h-8 text-emerald-500 group-hover:text-emerald-600 transition-colors" />
               </div>
