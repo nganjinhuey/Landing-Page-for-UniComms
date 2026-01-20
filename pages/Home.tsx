@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import HeroV2 from '../components/HeroV2';
 import UnprotectedStats from '../components/UnprotectedStats';
+import StatsBreakdown from '../components/StatsBreakdown';
 import PainPoints from '../components/PainPoints';
 import Features from '../components/Features';
 import HospitalNetwork from '../components/HospitalNetwork';
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
             <main>
                 <HeroV2 />
                 <UnprotectedStats />
+                <StatsBreakdown />
                 <PainPoints />
                 <Features />
                 <Coverage />
