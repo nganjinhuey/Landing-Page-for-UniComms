@@ -11,7 +11,7 @@ const Coverage: React.FC = () => {
                 {/* Background Image & Overlay */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="doctor_consultation.jpg"
+                        src="/Landing-Page-for-UniComms/doctor_consultation.jpg"
                         alt="Doctor consulting patient"
                         className="w-full h-full object-cover blur-[2px] opacity-80"
                     />
@@ -30,7 +30,7 @@ const Coverage: React.FC = () => {
                         </p>
                         <div className="w-24 h-1 bg-brand-navy mx-auto rounded-full mb-8"></div>
 
-                        <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-blue-100 text-brand-blue text-sm font-bold tracking-wide shadow-sm">
+                        <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-brand-blue/20 text-brand-blue text-sm font-bold tracking-wide shadow-sm">
                             * Waiting Period Applies
                         </p>
                     </div>
