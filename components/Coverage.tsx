@@ -11,26 +11,27 @@ const Coverage: React.FC = () => {
                 {/* Background Image & Overlay */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/Landing-Page-for-UniComms/doctor_consultation.jpg"
-                        alt="Doctor consulting patient"
+                        src="/Landing-Page-for-UniComms/premium_clinic_bg.jpg"
+                        alt="Premium clinic environment"
                         className="w-full h-full object-cover blur-[2px] opacity-80"
                     />
-                    <div className="absolute inset-0 bg-white/90"></div>
+                    <div className="absolute inset-0 bg-brand-navy/85 mix-blend-multiply"></div>
+                    <div className="absolute inset-0 bg-brand-navy/60"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                     {/* Centered Header */}
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-brand-navy mb-6">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-sm">
                             What's Included in Your Coverage
                         </h2>
-                        <p className="text-lg text-slate-600 mb-8">
+                        <p className="text-lg text-slate-200 mb-8 font-medium">
                             Comprehensive protection for peace of mind when you need it most.
                         </p>
-                        <div className="w-24 h-1 bg-brand-navy mx-auto rounded-full mb-8"></div>
+                        <div className="w-24 h-1 bg-brand-teal mx-auto rounded-full mb-8 shadow-sm"></div>
 
-                        <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-brand-blue/20 text-brand-blue text-sm font-bold tracking-wide shadow-sm">
+                        <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-sm font-bold tracking-wide backdrop-blur-sm">
                             * Waiting Period Applies
                         </p>
                     </div>
