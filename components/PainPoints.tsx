@@ -11,14 +11,14 @@ const PainPoints: React.FC = () => {
 
   return (
     <Section className="bg-white relative overflow-hidden">
-      <div className="text-center mb-16 relative z-10">
+      <div className="text-center mb-10 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 pt-10">What Most People Overlook About Medical Protection</h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto">
           The reality of healthcare in Malaysia is challenging. Are you prepared for the unexpected?
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 relative z-10 max-w-7xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 relative z-10 max-w-7xl mx-auto px-4">
         {PAIN_POINTS.map((point, idx) => {
           const Icon = point.icon;
           return (
@@ -33,7 +33,7 @@ const PainPoints: React.FC = () => {
         })}
       </div>
 
-      <div className="text-center relative z-10 pb-10">
+      <div className="text-center relative z-10 pb-6">
         <Button variant="outline" className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white" onClick={scrollToJoin}>
           <ArrowRight className="w-4 h-4 mr-2" /> Start Your Protection Plan Now
         </Button>
