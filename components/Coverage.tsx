@@ -6,9 +6,19 @@ import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 const Coverage: React.FC = () => {
     return (
         <div className="bg-white">
-            {/* Covered Items Grid - Revert to Screenshot Style (Light Blue) */}
-            <section className="py-20 bg-blue-50 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Covered Items Grid - Background Image with Overlay */}
+            <section className="py-20 relative overflow-hidden">
+                {/* Background Image & Overlay */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="doctor_consultation.jpg"
+                        alt="Doctor consulting patient"
+                        className="w-full h-full object-cover blur-[2px] opacity-80"
+                    />
+                    <div className="absolute inset-0 bg-white/90"></div>
+                </div>
+
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                     {/* Centered Header */}
                     <div className="text-center max-w-3xl mx-auto mb-16">
