@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const UnprotectedStats: React.FC = () => {
     return (
-        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <section className="relative py-28 flex items-center justify-center overflow-hidden">
             {/* Background Image - Busy Hospital */}
             <div className="absolute inset-0 z-0">
                 <img
